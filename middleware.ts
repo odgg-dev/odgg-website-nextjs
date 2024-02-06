@@ -1,11 +1,11 @@
 import createMiddleware from "next-intl/middleware";
 
 export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ["hr", "en"],
-
-  // Used when no locale matches
   defaultLocale: "hr",
+  // A list of all locales that are supported
+  localePrefix: "always",
+  locales: ["hr", "en"],
+  // Used when no locale matches
   pathnames: {
     // If all locales use the same pathname, a single
     // external path can be used for all locales.

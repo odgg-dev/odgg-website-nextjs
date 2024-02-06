@@ -1,8 +1,24 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import {
+  Inter,
+  Work_Sans,
+  Playfair_Display,
+  Red_Hat_Display,
+  Noto_Serif_Display,
+} from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "600"],
+  variable: "--font-sans",
+});
+const displayFont = Noto_Serif_Display({
+  subsets: ["latin"],
+  weight: ["300"],
+  variable: "--font-display",
+});
 
 export const metadata: Metadata = {
   title: "ODGG",
@@ -18,7 +34,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={locale}>
-      <body className={inter.className}>{children}</body>
+      <body
+        className={cn(
+          "bg-secondary font-sans",
+          workSans.variable,
+          displayFont.variable
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
