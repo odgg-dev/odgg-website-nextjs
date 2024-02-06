@@ -9,11 +9,11 @@ const HomepageNavigation = () => {
   const locale = useLocale();
   return (
     <nav className="w-full flex justify-center text-white">
-      <ul className="grid max-md:gap-[26px] grid-cols-2 md:flex w-full justify-around flex-wrap ">
+      <div className="grid max-md:gap-[26px] grid-cols-2 md:flex w-full justify-around flex-wrap ">
         {navigationPaths[locale === "hr" ? "hr" : "en"].map((navItem, i) => {
           if (navItem.path === "/") return null;
           return (
-            <li
+            <div
               key={navItem.path + Math.random()}
               className={cn(
                 "flex-1 flex items-center justify-center md:px-[60px] py-[5px] text-nav text-[20px]  uppercase text-center border-primary  border-l-2  md:first-of-type:border-transparent ",
@@ -26,10 +26,10 @@ const HomepageNavigation = () => {
               >
                 {navItem.label}
               </Link>
-            </li>
+            </div>
           );
         })}
-      </ul>
+      </div>
     </nav>
   );
 };
