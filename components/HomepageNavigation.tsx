@@ -14,7 +14,7 @@ const HomepageNavigation = () => {
           if (navItem.path === "/") return null;
           return (
             <div
-              key={navItem.path + Math.random()}
+              key={navItem.path}
               className={cn(
                 "flex-1 flex items-center justify-center md:px-[60px] py-[5px] text-nav text-[20px]  uppercase text-center border-primary  border-l-2  md:first-of-type:border-transparent ",
                 i % 2 !== 0 && "max-md:border-transparent"
