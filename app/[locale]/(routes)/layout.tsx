@@ -1,3 +1,5 @@
+import { Navigation } from "@/components/Navigation";
+
 export default function LocaleLayout({
   children,
   params: { locale },
@@ -7,7 +9,7 @@ export default function LocaleLayout({
 }) {
   return (
     <div>
-      {/* Navbar */}
+      <Navigation />
       {children}
     </div>
   );
