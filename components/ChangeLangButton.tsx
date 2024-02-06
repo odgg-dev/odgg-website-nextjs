@@ -9,7 +9,6 @@ export const ChangeLangButton = () => {
   const locale = useLocale();
   const router = useRouter();
   const pathName = usePathname();
-  console.log(router, pathName);
   const handleOnClick = () => {
     if (locale === "hr") {
       const newPathname = pathName.replace("hr", "en");
