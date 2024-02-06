@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation";
 export default function HomePage() {
   const t = useTranslations("Index");
   const fText = useTranslations("Footer");
-
+  const locale = useLocale();
   return (
     <div className="h-screen w-screen">
       <div className="absolute w-full h-full left-0 top-0 z-[-10] bg-black ">
@@ -37,7 +37,7 @@ export default function HomePage() {
         </div>
       </div>
       <div className="mx-auto max-w-[1200px] flex justify-center items-center">
-        <HomepageNavigation />
+        <HomepageNavigation lang={locale} />
       </div>
       <div className="flex justify-center absolute bottom-[50px] md:bottom-[200px] lg:bottom-[120px] left-[50%] -translate-x-1/2">
         <ChangeLangButton />
