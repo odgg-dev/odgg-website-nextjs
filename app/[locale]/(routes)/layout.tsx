@@ -9,7 +9,7 @@ export default function LocaleLayout({
 }) {
   return (
     <div>
-      <Navigation />
+      <Navigation localLang={locale === "en" ? "en" : "hr"} />
       {children}
     </div>
   );

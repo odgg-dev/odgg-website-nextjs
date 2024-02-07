@@ -4,6 +4,12 @@
     "introText1": "We provide comprehensive, fully tailor-made legal service which accommodate your operations, needs and goals., within the provided business and legislative frameworks.",
     "introText2": "The synergy of competency, knowledge, innovation and proficiency is the best guarantee of our support of your needs."
   },
+  "About": {
+    "pageTitle": "about us"
+  },
+  "OurTeam": { "pageTitle": "our team" },
+  "LegalServices": { "pageTitle": "legal services" },
+  "Contact": { "pageTitle": "contact" },
   "Footer": {
     "rights": "© 2020. Law firm Glamuzina and Grošeta. All rights reserved."
   }

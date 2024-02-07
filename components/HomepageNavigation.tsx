@@ -21,7 +21,7 @@ const HomepageNavigation = ({ lang }: { lang: string }) => {
               )}
             >
               <Link
-                href={`${lang}${navItem.path}`}
+                href={`${lang}/${navItem.path}`}
                 className="w-full cursor-pointer py-2 link-hover"
               >
                 {navItem.label}

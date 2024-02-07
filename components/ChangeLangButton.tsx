@@ -4,8 +4,15 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
 
-export const ChangeLangButton = () => {
+export const ChangeLangButton = ({
+  type = "big",
+  className = "",
+}: {
+  type?: "big" | "small";
+  className?: string;
+}) => {
   const locale = useLocale();
   const router = useRouter();
   const pathName = usePathname();
@@ -19,12 +26,23 @@ export const ChangeLangButton = () => {
       router.push(newPathname);
     }
   };
-  return (
-    <Button
-      onClick={handleOnClick}
-      className="bg-transparent text-white border-2 border-primary rounded-full px-[40px] uppercase hover:text-primary-100 transition hover:bg-transparent shadow-md"
-    >
-      {locale === "hr" ? "english" : "hrvatski"}
-    </Button>
-  );
+  if (type === "big") {
+    return (
+      <Button
+        onClick={handleOnClick}
+        className={cn(className)}
+        variant="langMd"
+        size="lg"
+      >
+        {locale === "hr" ? "english" : "hrvatski"}
+      </Button>
+    );
+  }
+  if (type === "small") {
+    return (
+      <Button size="sm" variant="langSm" onClick={handleOnClick}>
+        {locale === "hr" ? "en" : "hr"}
+      </Button>
+    );
+  }
 };
