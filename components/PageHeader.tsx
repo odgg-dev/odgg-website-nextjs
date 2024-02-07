@@ -11,7 +11,7 @@ export const PageHeader = ({ children }: { children: React.ReactNode }) => {
         width={1920}
         className="object-fit filter brightness-[.3] h-full"
       />
-      <div className="absolute bottom-[-4%] left-[50%] -translate-x-1/2 text-white">
+      <div className="absolute bottom-[-4%] max-sm:w-full max-sm:pl-8  left-[50%] -translate-x-1/2 text-white">
         <p className=" text-headingXLMobile md:text-headingXL h-full capitalize font-display">
           {children}
         </p>

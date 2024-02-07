@@ -16,7 +16,7 @@ const workSans = Work_Sans({
 });
 const displayFont = Noto_Serif_Display({
   subsets: ["latin"],
-  weight: ["300"],
+  weight: ["300", "600", "700"],
   variable: "--font-display",
 });
 
@@ -36,7 +36,7 @@ export default function RootLayout({
     <html lang={locale}>
       <body
         className={cn(
-          "bg-secondary font-sans",
+          "bg-secondary font-sans text-bodyMMobile md:text-bodyM text-foreground",
           workSans.variable,
           displayFont.variable
         )}
