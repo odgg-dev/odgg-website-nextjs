@@ -22,7 +22,7 @@ body,
     --primary: 34 67% 39%;
     --primary-100: 34 82% 73%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
+    --secondary: 0 0% 100%;
     --secondary-foreground: 0 0% 9%;
 
     --muted: 0 0% 96.1%;
@@ -84,5 +84,8 @@ body,
 @layer components {
   .link-hover {
     @apply hover:text-primary-100 transition;
+  }
+  .navLink {
+    @apply relative   last-of-type:after:w-0 after:top-[50%] after:-translate-y-1/2 after:block after:absolute after:right-0 after:h-[16px] after:w-[.5px] after:bg-primary;
   }
 }

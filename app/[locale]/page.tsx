@@ -1,12 +1,8 @@
 import { ChangeLangButton } from "@/components/ChangeLangButton";
 import HomepageNavigation from "@/components/HomepageNavigation";
-import { Button } from "@/components/ui/button";
-import { navigationPaths } from "@/constants/navigationPaths";
-import { cn } from "@/lib/utils";
+
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function HomePage() {
   const t = useTranslations("Index");
