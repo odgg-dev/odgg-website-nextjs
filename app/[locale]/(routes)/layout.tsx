@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
 
 export default function LocaleLayout({
@@ -11,6 +12,7 @@ export default function LocaleLayout({
     <div>
       <Navigation localLang={locale === "en" ? "en" : "hr"} />
       {children}
+      <Footer />
     </div>
   );
 }
