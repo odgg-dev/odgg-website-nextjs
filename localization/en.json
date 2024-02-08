@@ -28,7 +28,8 @@
   "LegalServices": { "pageTitle": "legal services" },
   "Contact": {
     "pageTitle": "contact",
-    "t1": "LAW FIRM GLAMUZINA & GROŠETA"
+    "t1-1": "LAW FIRM",
+    "t1-2": "GLAMUZINA & GROŠETA"
   },
   "Footer": {
     "rights": "© 2020. Law firm Glamuzina and Grošeta. All rights reserved."

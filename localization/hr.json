@@ -27,7 +27,8 @@
   "LegalServices": { "pageTitle": "pravne usluge" },
   "Contact": {
     "pageTitle": "kontakt",
-    "t1": "ODVJETNIČKO DRUŠTVO GLAMUZINA I GROŠETA"
+    "t1-1": "ODVJETNIČKO DRUŠTVO",
+    "t1-2": "GLAMUZINA & GROŠETA d.o.o."
   },
   "Footer": {
     "rights": "© 2020. Odvjetnički ured Glamuzina i Grošeta. Sva prava pridržana."
