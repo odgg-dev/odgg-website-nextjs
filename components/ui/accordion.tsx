@@ -35,7 +35,7 @@ const AccordionTrigger = React.forwardRef<
       {...props}
     >
       {children}
-      <ThinArrowDown className=" shrink-0 transition-transform duration-200 text-primary absolute  right-[20px] md:right-[30px] max-md:w-[26px] " />
+      <ThinArrowDown className=" shrink-0 transition-transform duration-200 text-primary absolute  right-[5px] md:right-[20px] max-md:w-[26px] " />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
