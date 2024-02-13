@@ -19,19 +19,30 @@ export default defineType({
   fields: [
     defineField({
       name: "name",
-      title: "Ime i Prezime",
+      title: "Ime",
+      type: "string",
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: "surname",
+      title: "Prezime",
       type: "string",
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "slug",
-      title: "Slug",
+      title: "Slug*",
       type: "slug",
       options: {
-        source: "name",
+        source: (doc, context) => `${doc.name}-${doc.surname}`,
         maxLength: 96,
       },
       validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: "email",
+      title: "Email Adresa",
+      type: "string",
     }),
     defineField({
       name: "companyPosition",
@@ -179,13 +190,16 @@ export default defineType({
 
   preview: {
     select: {
-      title: "title",
-      author: "author.name",
+      name: "name",
+      surname: "surname",
       media: "mainImage",
     },
     prepare(selection) {
-      const { author } = selection;
-      return { ...selection, subtitle: author && `by ${author}` };
+      const { name, surname } = selection;
+      return {
+        ...selection,
+        title: `${surname} ${name}`,
+      };
     },
   },
 });

@@ -16,7 +16,7 @@ const workSans = Work_Sans({
 });
 const displayFont = Noto_Serif_Display({
   subsets: ["latin"],
-  weight: ["300", "600", "700"],
+  weight: ["300", "400", "600", "700"],
   variable: "--font-display",
 });
 
