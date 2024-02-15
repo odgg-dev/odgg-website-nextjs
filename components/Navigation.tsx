@@ -13,7 +13,7 @@ import { MobileNavigation } from "./MobileNavigation";
 export const Navigation = ({ localLang }: { localLang: "en" | "hr" }) => {
   const router = useRouter();
   const pathName = usePathname();
-  console.log(pathName);
+  
   const handleLinkClick = (path: string) => {
     router.push(`${localLang}path`);
   };

@@ -24,7 +24,22 @@
     "n6": "SOCIAL RESPONSIBILITY",
     "t6": "Ever since its establishment our firm is based on responsibility, community and inclusiveness, because we believe that a business needs to be accountable to the society in which it operates. Our firm has been supporting various initiatives which contribute to the development of culture, sports and education. We have preserved this tradition."
   },
-  "OurTeam": { "pageTitle": "our team" },
+  "OurTeam": {
+    "pageTitle": "our team",
+    "sp_title": "senior partners",
+    "jp_title": "junior partners",
+    "odv_title": "lawyers",
+    "vjez_title": "law trainees",
+    "adm_title": "administration",
+    "obrazovanje": "education",
+    "podrucjaPrakse": "areas of practice",
+    "jezici": "languages",
+    "jezik": "language",
+    "clanstva": "memberships",
+    "clanci": "articles",
+    "strucniSkupovi": "professional conferences",
+    "kontakt": "contact"
+  },
   "LegalServices": { "pageTitle": "legal services" },
   "Contact": {
     "pageTitle": "contact",

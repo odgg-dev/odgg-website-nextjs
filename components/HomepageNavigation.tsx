@@ -1,12 +1,10 @@
 "use client";
 import { navigationPaths } from "@/constants/navigationPaths";
 import { cn } from "@/lib/utils";
-import { useLocale } from "next-intl";
 import Link from "next/link";
 import React from "react";
 
 const HomepageNavigation = ({ lang }: { lang: string }) => {
-  console.log("rendered");
   return (
     <nav className="w-full flex justify-center text-white z-[20]">
       <div className="grid max-md:gap-[26px] grid-cols-2 md:flex w-full justify-around flex-wrap ">

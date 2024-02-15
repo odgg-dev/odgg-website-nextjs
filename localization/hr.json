@@ -23,7 +23,22 @@
     "n6": "DRUŠTVENA ODGOVORNOST",
     "t6": "Od samog osnivanja naše Društvo se temelji na društvenoj odgovornosti, brizi o zajednici i uključivosti, jer vjerujemo da poslovanje mora biti odgovorno prema društvu u kojem djeluje. Naše Društvo podupiralo je mnoge inicijative koje doprinose razvoju kulture, sporta i obrazovanja. Nastavljamo ovu tradiciju,"
   },
-  "OurTeam": { "pageTitle": "naš tim" },
+  "OurTeam": {
+    "pageTitle": "naš tim",
+    "sp_title": "senior partneri",
+    "jp_title": "junior partneri",
+    "odv_title": "odvjetnici",
+    "vjez_title": "odvjetnički vježbenici",
+    "adm_title": "administracija",
+    "obrazovanje": "obrazovanje",
+    "podrucjaPrakse": "pordručja prakse",
+    "jezici": "jezici",
+    "jezik": "jezik",
+    "clanstva": "članstva",
+    "clanci": "članci",
+    "strucniSkupovi": "stručni skupovi",
+    "kontakt": "kontakt"
+  },
   "LegalServices": { "pageTitle": "pravne usluge" },
   "Contact": {
     "pageTitle": "kontakt",
