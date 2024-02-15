@@ -21,7 +21,10 @@ const displayFont = Noto_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "ODGG",
+  title: {
+    default: "odgg",
+    template: "%s | odgg",
+  },
   description: "Odvjetnicko društvo Glamuzina & Grošeta",
 };
 

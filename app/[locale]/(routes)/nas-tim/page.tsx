@@ -5,7 +5,10 @@ import React from "react";
 import { getTranslations } from "next-intl/server";
 import { EmployeeSectionTitle } from "@/components/OurTeamPage/EmployeeSectionTitle";
 import EmployeeCard from "@/components/OurTeamPage/EmployeeCard";
-
+import { Metadata } from "next/types";
+export const metadata: Metadata = {
+  title: "Tim",
+};
 const NasTimPage = async ({ params }: { params: { locale: "hr" | "en" } }) => {
   const t = await getTranslations("OurTeam");
 
