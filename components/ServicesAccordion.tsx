@@ -18,7 +18,7 @@ export const ServicesAccordion = ({ data }: { data: IServciesData[] }) => {
             className="border-[1px] border-primary py-4 px-[20px] rounded-xl"
           >
             <AccordionTrigger className=" text-headingMMobile md:text-headingM relative">
-              <div className="mr-[40px]">{data.title}</div>
+              <div className="mr-[30px] text-left">{data.title}</div>
             </AccordionTrigger>
             <AccordionContent>
               <ul className="flex flex-col gap-[12px] text-bodyM pl-2 pt-[10px] md:pt-[20px]">

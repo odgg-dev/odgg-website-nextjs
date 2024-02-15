@@ -1,17 +1,17 @@
 import { PageHeader } from "@/components/PageHeader";
 import { getEmployees } from "@/sanity/lib/queries";
-import { useTranslations } from "next-intl";
 import React from "react";
 import { getTranslations } from "next-intl/server";
 import { EmployeeSectionTitle } from "@/components/OurTeamPage/EmployeeSectionTitle";
 import EmployeeCard from "@/components/OurTeamPage/EmployeeCard";
 import { Metadata } from "next/types";
+import { TLocaleLang } from "@/types";
 export const metadata: Metadata = {
   title: "Tim",
   description:
     "Odvjetničko društvo Glamuzina i Grošta čine vrhunski odvjetnici puni iskustva.",
 };
-const NasTimPage = async ({ params }: { params: { locale: "hr" | "en" } }) => {
+const NasTimPage = async ({ params }: { params: { locale: TLocaleLang } }) => {
   const t = await getTranslations("OurTeam");
 
   const employees = await getEmployees();
@@ -40,7 +40,7 @@ const NasTimPage = async ({ params }: { params: { locale: "hr" | "en" } }) => {
 
       <main className="py-[80px]">
         {employees && (
-          <div className="container flex flex-col gap-[80px]">
+          <div className="container flex flex-col gap-[50px] md:gap-[80px]">
             {seniorPartneri.length > 0 && (
               <div>
                 <EmployeeSectionTitle>senior partneri</EmployeeSectionTitle>

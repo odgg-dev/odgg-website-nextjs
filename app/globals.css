@@ -92,10 +92,10 @@ body,
     @apply font-bold uppercase mb-[-5px];
   }
   .employee-showcase-big-grid {
-    @apply grid grid-cols-1 md:grid-cols-2 max-md:gap-[50px] pt-[50px];
+    @apply grid grid-cols-1 md:grid-cols-2 max-md:gap-[50px] pt-[50px] md:pt-[80px];
   }
   .employee-showcase-small-grid {
-    @apply flex flex-wrap justify-center gap-[40px] pt-[50px];
+    @apply flex flex-wrap justify-center gap-[40px] pt-[50px] md:pt-[80px];
   }
 }
 @layer utilities {
