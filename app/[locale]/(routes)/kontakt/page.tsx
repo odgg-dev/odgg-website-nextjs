@@ -1,7 +1,10 @@
 import { PageHeader } from "@/components/PageHeader";
+import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import React from "react";
-
+export const metadata: Metadata = {
+  title: "Kontakt",
+};
 const KontaktPage = ({ params }: { params: { locale: "hr" | "en" } }) => {
   const t = useTranslations("Contact");
   const locale = params.locale;

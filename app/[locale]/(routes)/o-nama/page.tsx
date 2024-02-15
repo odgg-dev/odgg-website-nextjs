@@ -3,8 +3,11 @@ import { PageHeader } from "@/components/PageHeader";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { Metadata } from "next/types";
 import React from "react";
-
+export const metadata: Metadata = {
+  title: "O Nama",
+};
 const ONamaPage = () => {
   const t = useTranslations("About");
   return (
