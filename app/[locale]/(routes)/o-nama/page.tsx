@@ -1,6 +1,4 @@
-import { ChangeLangButton } from "@/components/ChangeLangButton";
 import { PageHeader } from "@/components/PageHeader";
-import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Metadata } from "next/types";
@@ -17,7 +15,7 @@ const ONamaPage = () => {
       <PageHeader>{t("pageTitle")}</PageHeader>
 
       <div className="container text-center  pt-[70px] md:pt-[90px] flex flex-col gap-[65px] md:gap-[90px] mb-[90px] md:mb-[185px] ">
-        <p className="text-headingMMobile uppercase md:text-headingM text-primary-100 ">
+        <p className="text-headingMMobile uppercase md:text-headingM text-primary-100 leading-[35px] md:leading-[44px]">
           {t("t1")}
         </p>
         <div>
@@ -44,7 +42,7 @@ const ONamaPage = () => {
       </div>
       <div className="relative md:pb-[50px] mb-[90px] md:mb-[115px]">
         <div className="relative container w-full md:px-0">
-          <div className="md:absolute top-[-80px] md:h-[700px] w-full  md:max-w-[600px]  bg-primary/95 z-[10] p-[16px] md:p-[26px] text-headingMMobile md:text-headingM font-display text-white">
+          <div className="md:absolute top-[-80px] md:h-[700px] w-full  md:max-w-[600px]  bg-primary/95 z-[10] p-[16px] md:p-[26px] text-headingMMobile md:text-headingM leading-[35px] md:leading-[44px] font-display text-white">
             <h4 className="uppercase mb-[8px] font-bold text-center md:text-start">
               {t("n5")}
             </h4>

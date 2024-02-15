@@ -50,7 +50,7 @@ const EmployeeCard = ({
     return (
       <div className="w-full flex flex-col items-center gap-[40px] md:gap-[60px]  text-center">
         {" "}
-        <div className="p-10 mb-[-50px]">
+        <div className="mb-[-50px] max-w-[280px] max-h-[280px] md:max-w-[410px] md:max-h-[410px] ">
           {mainImage && (
             <Image
               src={imageUrl}
@@ -74,7 +74,7 @@ const EmployeeCard = ({
     return (
       <div className="w-full flex flex-col items-center gap-[40px] md:gap-[50px]  text-center">
         {" "}
-        <div className="p-10 mb-[-20px]">
+        <div className=" mb-[-20px] max-w-[280px] max-h-[280px] md:max-w-[410px] md:max-h-[410px]">
           {mainImage && (
             <Image
               src={imageUrl}

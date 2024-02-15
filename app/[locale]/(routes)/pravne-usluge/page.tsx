@@ -1,6 +1,7 @@
 import { PageHeader } from "@/components/PageHeader";
 import { ServicesAccordion } from "@/components/ServicesAccordion";
 import { SERVICES } from "@/constants";
+import { TLocaleLang } from "@/types";
 import { useTranslations } from "next-intl";
 import { Metadata } from "next/types";
 import React from "react";
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Nudimo razne pravne usluge, neke od njih: TRGOVAČKO PRAVO I PRAVO DRUŠTAVA , BANKARSTVO, FINANCIJE I TRŽIŠTA KAPITALA , NAPLATA POTRAŽIVANJA , RJEŠAVANJE SPOROVA",
 };
-const PravneUslugePage = ({ params }: { params: { locale: "en" | "hr" } }) => {
+const PravneUslugePage = ({ params }: { params: { locale: TLocaleLang } }) => {
   const t = useTranslations("LegalServices");
 
   return (

@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import {
-  Inter,
-  Work_Sans,
-  Playfair_Display,
-  Red_Hat_Display,
-  Noto_Serif_Display,
-} from "next/font/google";
+import { Work_Sans, Noto_Serif_Display } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { TLocaleLang } from "@/types";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -34,10 +29,10 @@ export default function RootLayout({
   params: { locale },
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: TLocaleLang };
 }>) {
   return (
-    <html lang={locale}>
+    <html lang={locale || "hr"}>
       <body
         className={cn(
           "bg-secondary font-sans text-bodyMMobile md:text-bodyM text-foreground",
