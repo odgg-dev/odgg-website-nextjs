@@ -203,3 +203,20 @@ export default defineType({
     },
   },
 });
+export interface IEmployeeData {
+  _id: string;
+  name: string;
+  surname: string;
+  educations:
+    | {
+        hr_text: string;
+        en_text: string;
+      }[]
+    | null;
+  slug: { current: string; _type: string };
+  email: string | null;
+  companyPosition: { hr_text: string; en_text: string };
+  occupation: { hr_text: string; en_text: string };
+  areaOfPractices: { hr_text: string; en_text: string }[] | null;
+  bio: any | null;
+}

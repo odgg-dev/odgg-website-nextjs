@@ -88,6 +88,15 @@ body,
   .navLink {
     @apply relative   last-of-type:after:w-0 after:top-[50%] after:-translate-y-1/2 after:block after:absolute after:right-0 after:h-[16px] after:w-[.5px] after:bg-primary;
   }
+  .employee-info-item-title {
+    @apply font-bold uppercase mb-[-5px];
+  }
+  .employee-showcase-big-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 max-md:gap-[50px] pt-[50px];
+  }
+  .employee-showcase-small-grid {
+    @apply flex flex-wrap justify-center gap-[40px] pt-[50px];
+  }
 }
 @layer utilities {
   .img-darken-filter {
