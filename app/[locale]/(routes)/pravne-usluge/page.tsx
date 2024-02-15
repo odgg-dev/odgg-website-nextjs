@@ -6,6 +6,8 @@ import { Metadata } from "next/types";
 import React from "react";
 export const metadata: Metadata = {
   title: "Pravne Usluge",
+  description:
+    "Nudimo razne pravne usluge, neke od njih: TRGOVAČKO PRAVO I PRAVO DRUŠTAVA , BANKARSTVO, FINANCIJE I TRŽIŠTA KAPITALA , NAPLATA POTRAŽIVANJA , RJEŠAVANJE SPOROVA",
 };
 const PravneUslugePage = ({ params }: { params: { locale: "en" | "hr" } }) => {
   const t = useTranslations("LegalServices");

@@ -25,7 +25,8 @@ export const metadata: Metadata = {
     default: "odgg",
     template: "%s | odgg",
   },
-  description: "Odvjetnicko društvo Glamuzina & Grošeta",
+  description:
+    "Odvjetničko društvo Glamuzina & Grošeta d.o.o. pruža svojim klijentima šritoki raspon usluga iz razičitih grana prava. a interese svojih klijenata promiče pred domaćim sudovima i javnim tijelima, ali i domaćim i međunarodnim arbitražama.",
 };
 
 export default function RootLayout({
