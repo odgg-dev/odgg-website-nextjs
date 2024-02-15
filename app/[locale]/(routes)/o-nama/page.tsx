@@ -7,6 +7,8 @@ import { Metadata } from "next/types";
 import React from "react";
 export const metadata: Metadata = {
   title: "O Nama",
+  description:
+    "Odvjetničko društvo Glamuzina & Grošeta d.o.o. pruža svojim klijentima šritoki raspon usluga iz razičitih grana prava. a interese svojih klijenata promiče pred domaćim sudovima i javnim tijelima, ali i domaćim i međunarodnim arbitražama.",
 };
 const ONamaPage = () => {
   const t = useTranslations("About");

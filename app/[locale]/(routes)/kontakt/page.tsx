@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl";
 import React from "react";
 export const metadata: Metadata = {
   title: "Kontakt",
+  description:
+    "Kontaktirajte nas na email: info@odgg.hr , telefon: +38513909530 ",
 };
 const KontaktPage = ({ params }: { params: { locale: "hr" | "en" } }) => {
   const t = useTranslations("Contact");

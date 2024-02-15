@@ -8,6 +8,8 @@ import EmployeeCard from "@/components/OurTeamPage/EmployeeCard";
 import { Metadata } from "next/types";
 export const metadata: Metadata = {
   title: "Tim",
+  description:
+    "Odvjetničko društvo Glamuzina i Grošta čine vrhunski odvjetnici puni iskustva.",
 };
 const NasTimPage = async ({ params }: { params: { locale: "hr" | "en" } }) => {
   const t = await getTranslations("OurTeam");
